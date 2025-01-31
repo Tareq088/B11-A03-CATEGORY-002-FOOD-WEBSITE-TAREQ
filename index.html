@@ -121,24 +121,67 @@
         <div  class="md:container mx-auto py-20 px-5">
           <h3 class="text-xl lg:text-3xl font-semibold text-food-primary mb-5">Popular Products
           </h3>
-          <div class="grid grid-cols-1 lg:grid-cols-2">
-            <div>
-              <h3>30% Off</h3>
-              <p>Discover a world of treats, toys and essentials handpicked for</p>
-              <button class="text-black text-bold text-2xl bg-white px-8 py-2 rounded-xl hover:bg-food-primary">Buy Now</button>
-
+          <div class="flex flex-col lg:flex-row gap-4">
+            <div class="h-64 lg:h-auto lg:w-2/5 border rounded-lg bg-gradient-to-b from-[#67e051] to-[#90e881] relative">
+              <h3 class="text-white font-bold text-2xl mt-10 pl-4 z-100">30% Off</h3>
+              <p class="text-black pl-4 max-w-80 my-3 z-100">Discover a world of treats, toys and essentials handpicked for</p>
+              <div class="pl-4 ">
+                <button class="text-black text-bold text-base bg-white px-5 py-2 rounded-xl hover:bg-food-primary">Buy Now</button>
+              </div>
+              <div class="absolute bottom-[0%] right-[2%] z-0">
+                <img class=" md: max-w-40 lg:max-w-60 " src="assets/vegetable-offer.png" alt="">
+              </div>
             </div>
-            <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="lg:w-3/5 grid grid-cols-2 lg:grid-cols-3 gap-5">
               <div class="flex bg-white rounded-xl items-center">
                 <div class="p-2">
                   <img class="bg-primary-01 rounded-lg" src="assets/onion.png" alt="onion">
                 </div>
                 <div>
                   <div class="inline-flex gap-2">
-                    <img src="assets/star.png" alt="star">
+                    <img class="w-4 h-4" src="assets/star.png" alt="star">
                     <p>4.5</p>
                   </div>
                   <p class="font-bold">Onion 1Kg</p>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="flex bg-white rounded-xl items-center">
+                <div class="p-2">
+                  <img class="bg-primary-01 rounded-lg" src="assets/tomatoo.png" alt="onion">
+                </div>
+                <div>
+                  <div class="inline-flex gap-2">
+                    <img class="w-4 h-4" src="assets/star.png" alt="star">
+                    <p>4.5</p>
+                  </div>
+                  <p class="font-bold">Tomato 500g</p>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="flex bg-white rounded-xl items-center">
+                <div class="p-2">
+                  <img class="bg-primary-01 rounded-lg" src="assets/potato.png" alt="onion">
+                </div>
+                <div>
+                  <div class="inline-flex gap-2">
+                    <img class="w-4 h-4" src="assets/star.png" alt="star">
+                    <p>4.5</p>
+                  </div>
+                  <p class="font-bold">potato 1Kg</p>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="flex bg-white rounded-xl items-center">
+                <div class="p-2">
+                  <img class="bg-primary-01 rounded-lg" src="assets/tomatoo.png" alt="onion">
+                </div>
+                <div>
+                  <div class="inline-flex gap-2">
+                    <img class="w-4 h-4" src="assets/star.png" alt="star">
+                    <p>4.5</p>
+                  </div>
+                  <p class="font-bold">Tomato 500g</p>
                   <p class="font-semibold">$39.99</p>
                 </div>
               </div>
@@ -148,10 +191,36 @@
                 </div>
                 <div>
                   <div class="inline-flex gap-2">
-                    <img src="assets/star.png" alt="star">
+                    <img class="w-4 h-4" src="assets/star.png" alt="star">
                     <p>4.5</p>
                   </div>
                   <p class="font-bold">Onion 1Kg</p>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="flex bg-white rounded-xl items-center">
+                <div class="p-2">
+                  <img class="bg-primary-01 rounded-lg" src="assets/tomatoo.png" alt="onion">
+                </div>
+                <div>
+                  <div class="inline-flex gap-2">
+                    <img class="w-4 h-4" src="assets/star.png" alt="star">
+                    <p>4.5</p>
+                  </div>
+                  <p class="font-bold">Tomato 500g</p>
+                  <p class="font-semibold">$39.99</p>
+                </div>
+              </div>
+              <div class="flex bg-white rounded-xl items-center">
+                <div class="p-2">
+                  <img class="bg-primary-01 rounded-lg" src="assets/potato.png" alt="onion">
+                </div>
+                <div>
+                  <div class="inline-flex gap-2">
+                    <img class="w-4 h-4" src="assets/star.png" alt="star">
+                    <p>4.5</p>
+                  </div>
+                  <p class="font-bold">potato 1Kg</p>
                   <p class="font-semibold">$39.99</p>
                 </div>
               </div>
@@ -161,7 +230,7 @@
                 </div>
                 <div>
                   <div class="inline-flex gap-2">
-                    <img src="assets/star.png" alt="star">
+                    <img class="w-4 h-4" src="assets/star.png" alt="star">
                     <p>4.5</p>
                   </div>
                   <p class="font-bold">Onion 1Kg</p>
@@ -170,83 +239,17 @@
               </div>
               <div class="flex bg-white rounded-xl items-center">
                 <div class="p-2">
-                  <img class="bg-primary-01 rounded-lg" src="assets/onion.png" alt="onion">
+                  <img class="bg-primary-01 rounded-lg" src="assets/tomatoo.png" alt="onion">
                 </div>
                 <div>
                   <div class="inline-flex gap-2">
-                    <img src="assets/star.png" alt="star">
+                    <img class="w-4 h-4" src="assets/star.png" alt="star">
                     <p>4.5</p>
                   </div>
-                  <p class="font-bold">Onion 1Kg</p>
+                  <p class="font-bold">Tomato 500g</p>
                   <p class="font-semibold">$39.99</p>
                 </div>
-              </div>
-              <div class="flex bg-white rounded-xl items-center">
-                <div class="p-2">
-                  <img class="bg-primary-01 rounded-lg" src="assets/onion.png" alt="onion">
-                </div>
-                <div>
-                  <div class="inline-flex gap-2">
-                    <img src="assets/star.png" alt="star">
-                    <p>4.5</p>
-                  </div>
-                  <p class="font-bold">Onion 1Kg</p>
-                  <p class="font-semibold">$39.99</p>
-                </div>
-              </div>
-              <div class="flex bg-white rounded-xl items-center">
-                <div class="p-2">
-                  <img class="bg-primary-01 rounded-lg" src="assets/onion.png" alt="onion">
-                </div>
-                <div>
-                  <div class="inline-flex gap-2">
-                    <img src="assets/star.png" alt="star">
-                    <p>4.5</p>
-                  </div>
-                  <p class="font-bold">Onion 1Kg</p>
-                  <p class="font-semibold">$39.99</p>
-                </div>
-              </div>
-              <div class="flex bg-white rounded-xl items-center">
-                <div class="p-2">
-                  <img class="bg-primary-01 rounded-lg" src="assets/onion.png" alt="onion">
-                </div>
-                <div>
-                  <div class="inline-flex gap-2">
-                    <img src="assets/star.png" alt="star">
-                    <p>4.5</p>
-                  </div>
-                  <p class="font-bold">Onion 1Kg</p>
-                  <p class="font-semibold">$39.99</p>
-                </div>
-              </div>
-              <div class="flex bg-white rounded-xl items-center">
-                <div class="p-2">
-                  <img class="bg-primary-01 rounded-lg" src="assets/onion.png" alt="onion">
-                </div>
-                <div>
-                  <div class="inline-flex gap-2">
-                    <img src="assets/star.png" alt="star">
-                    <p>4.5</p>
-                  </div>
-                  <p class="font-bold">Onion 1Kg</p>
-                  <p class="font-semibold">$39.99</p>
-                </div>
-              </div>
-              <div class="flex bg-white rounded-xl items-center">
-                <div class="p-2">
-                  <img class="bg-primary-01 rounded-lg" src="assets/onion.png" alt="onion">
-                </div>
-                <div>
-                  <div class="inline-flex gap-2">
-                    <img src="assets/star.png" alt="star">
-                    <p>4.5</p>
-                  </div>
-                  <p class="font-bold">Onion 1Kg</p>
-                  <p class="font-semibold">$39.99</p>
-                </div>
-              </div>
-
+              </div> 
             </div>
           </div>
         </div>
