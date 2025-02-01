@@ -25,12 +25,24 @@
       tailwind.config = {
         theme: {
           extend: {
+            animation: {
+              'fade-in': 'fadeIn 1s ease-in infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': {
+                  opacity: '0',
+                },
+                '100%': {
+                  opacity: '1',
+                },
+              },
+            },
             colors: {
               clifford: '#da373d',
               'food-primary':'#179800',
               'dark-03':'#111111',
               'primary-01':'#EFEBE3',
-
             }
           }
         }
@@ -42,7 +54,7 @@
   <header class="max-w-full bg-gradient-to-t from-red-50 to-white">
 
     <!-- nav section -->
-      <nav class="md:container mx-auto mb-5 px-5">
+      <nav class="md:container mx-auto px-5">
           <div class="navbar justify-between">
               <div class="">
                   <img src="assets/logo-header.png" alt="">
@@ -82,10 +94,11 @@
               </div>
             </div>
       </nav>
+      <hr class="bg-slate-400 lg:hidden">
       <!-- banner section -->
       <div class="md:container mx-auto ">
           <div class="px-20 text-center pt-10 pb-20">
-              <h2 class="mb-5 text-3xl lg:text-5xl font-semibold">Freshness <span class="text-food-primary">You Can <br> Count</span>  On, Prices You’ll Love!</h2>
+              <h2 class="mb-5 text-3xl lg:text-5xl font-semibold">Freshness <span class="text-food-primary animate-fade-in ">You Can <br> Count</span>  On, Prices You’ll Love!</h2>
               <p class="mb-5 mx-auto max-w-md lg:max-w-2xl text-sm lg:text-lg">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
               </p>
               <img  class="w-full mx-auto" src="assets/hero-vegetables.png" alt="">
@@ -116,7 +129,7 @@
         </div>
       </div>
     </section>
-              <!-- popular product section -->
+                <!-- popular product section -->
     <section class="max-w-full bg-primary-01 px-5" >
       <div  class="md:container mx-auto py-20 px-5">
         <h3 class="text-xl lg:text-3xl font-semibold text-food-primary mb-5">Popular Products
@@ -258,7 +271,7 @@
       </div>
 
     </section>
-          <!-- Extra sectin added by me for challenging part -->
+                <!-- Extra sectin added by me for challenging part -->
     <section class="md:container mx-auto text-center px-5" >
       <h3 class="text-xl lg:text-3xl font-semibold text-food-primary my-10 text-left">Special discouts for our Royal Customer
       </h3>
@@ -279,6 +292,7 @@
         </div>
       </div>
     </section>
+                <!-- arrival and news section -->
                 
     <div class="relative">
                 <!-- Arrival & offers -->
@@ -328,11 +342,7 @@
           </div>
         </div>
       </section>
-    
     </div>
-
-               
-    
                 <!-- news section -->
     <!-- <section class="md:container mx-auto py-16 px-5 bg-primary-01 rounded-3xl">
       <div class="flex flex-col gap-10 justify-evenly lg:flex-row">
@@ -352,8 +362,7 @@
           </div>
         </div>
       </div>
-    </section> -->
-              
+    </section> -->              
   </main>
                 <!-- footer section -->
   <footer class="max-w-full bg-food-primary">
@@ -363,7 +372,7 @@
           <img class="" src="assets/footer-logo.png" alt="">
           <p class="text-xl text-white my-3 text-justify pb-0">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
         </div>
-        <div class="lg:justify-self-center">
+        <div class="lg:justify-self-cente md:self-end md:pb-5">
           <ul class="space-y-8">
             <li><a class="text-white text-lg hover:text-red-900 " href="">Product</a></li>
             <li><a class="text-white text-lg hover:text-red-900 " href="">Services</a></li>
@@ -378,9 +387,7 @@
             <a href=""><img class="w-7 h-7 hover:bg-red-900" src="assets/linkdin.png" alt=""></a>
             <a href=""><img class="w-7 h-7 hover:bg-red-900" src="assets/utube.png" alt=""></a>
           </div>
-
         </div>
-  
       </div>
     </section>
 
